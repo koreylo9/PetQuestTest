@@ -1,3 +1,4 @@
+import { PetSearchComponent } from './pet-search/pet-search.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'pet-management', component: PetManagementComponent},
   { path: 'pet-management-add', component: PetManagementAddComponent},
   { path: 'pet-management-view', component: PetManagementViewComponent},
+  { path: 'pet-search', component: PetSearchComponent},
   { path: '', redirectTo: 'home-page', pathMatch: 'full'}
 ];
 
