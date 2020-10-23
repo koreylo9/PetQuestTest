@@ -9,6 +9,7 @@ import { PetManagementAddComponent } from './pet-management-add/pet-management-a
 import { PetManagementViewComponent } from './pet-management-view/pet-management-view.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PetSearchComponent } from './pet-search/pet-search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PetSearchComponent } from './pet-search/pet-search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
