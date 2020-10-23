@@ -18,6 +18,15 @@ export class PetSearchComponent implements OnInit {
 
   model = new PetInfo();
 
+  Breeds: string[] = [
+    'Golden Retriever',
+    'Husky',
+    'Labrador',
+    'Pomeranian',
+    'Poodle'
+  ];
+
+
   ngOnInit(): void {
   }
 

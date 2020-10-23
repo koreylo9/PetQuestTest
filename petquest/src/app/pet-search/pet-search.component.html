@@ -8,10 +8,7 @@
               <label for="breed">Breed</label>
               <select class="form-control" id="breed" name="breed" [(ngModel)]="model.breed">
                 <option>Any</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option *ngFor="let breed of Breeds" [value]="breed">{{breed}}</option>
               </select>
             </div>
             <div class="form-group">
