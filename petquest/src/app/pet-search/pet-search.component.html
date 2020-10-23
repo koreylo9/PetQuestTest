@@ -3,7 +3,7 @@
   <div class="row">
     <!-- Search bars area -->
       <div class="col searchBar">
-        <form>
+        <form #petForm="ngForm" (ngSubmit)="onSubmit(petForm)">
             <div class="form-group">
               <label for="breed">Breed</label>
               <select class="form-control" id="breed" name="breed" [(ngModel)]="model.breed">
@@ -16,23 +16,34 @@
             </div>
             <div class="form-group">
               <label for="petAge">Age</label>
-              <select class="form-control" id="petAge">
+              <select class="form-control" id="petAge" name="age" [(ngModel)]="model.age">
                 <option>Any</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Puppy</option>
+                <option>Young</option>
+                <option>Adult</option>
+                <option>Senior</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="petSize">Size</label>
+              <select class="form-control" id="petSize" name="size" [(ngModel)]="model.size">
+                <option>Any</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Extra Large</option>
               </select>
             </div>
             <div class="form-group">
               <label for="gender">Gender</label>
-              <select class="form-control" id="gender">
+              <select class="form-control" id="gender" name="gender" [(ngModel)]="model.gender">
                 <option>Any</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>Male</option>
+                <option>Female</option>
               </select>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">Submit</button>
             </div>
         </form>
       </div>

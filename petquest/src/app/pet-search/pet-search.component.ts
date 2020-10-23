@@ -21,4 +21,7 @@ export class PetSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(petForm): void {
+    console.log(petForm);
+  }
 }
