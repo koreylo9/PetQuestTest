@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'pet-management', component: PetManagementComponent},
   { path: 'pet-management-add', component: PetManagementAddComponent},
   { path: 'pet-management-view', component: PetManagementViewComponent},
-  { path: 'pet-search', component: PetSearchComponent},
+  { path: 'dog-search', component: PetSearchComponent},
+  { path: 'cat-search', component: PetSearchComponent},
   { path: '', redirectTo: 'home-page', pathMatch: 'full'}
 ];
 

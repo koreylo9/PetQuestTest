@@ -27,7 +27,8 @@
             [(ngModel)]="model.age"
           >
             <option>Any</option>
-            <option>Puppy</option>
+            <option *ngIf="href === '/pet-search'">Puppy</option>
+            <option *ngIf="href === '/cat-search'">Kitten</option>
             <option>Young</option>
             <option>Adult</option>
             <option>Senior</option>

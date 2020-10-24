@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 export class PetInfo {
   public breed: string;
@@ -14,7 +15,7 @@ export class PetInfo {
 })
 export class PetSearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   model = new PetInfo();
 
@@ -25,9 +26,11 @@ export class PetSearchComponent implements OnInit {
     'Pomeranian',
     'Poodle'
   ];
-
+  href  = '';
 
   ngOnInit(): void {
+    this.href = this.router.url;
+    console.log(this.href);
   }
 
   onSubmit(petForm): void {
