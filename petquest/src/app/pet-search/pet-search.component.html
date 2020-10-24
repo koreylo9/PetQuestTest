@@ -2,96 +2,159 @@
 <div class="container-fluid">
   <div class="row">
     <!-- Search bars area -->
-      <div class="col searchBar">
-        <form #petForm="ngForm" (ngSubmit)="onSubmit(petForm)">
-            <div class="form-group">
-              <label for="breed">Breed</label>
-              <select class="form-control" id="breed" name="breed" [(ngModel)]="model.breed">
-                <option>Any</option>
-                <option *ngFor="let breed of Breeds" [value]="breed">{{breed}}</option>
-              </select>
+    <div class="col-lg-3 searchBar">
+      <form #petForm="ngForm" (ngSubmit)="onSubmit(petForm)">
+        <div class="form-group">
+          <label for="breed">Breed</label>
+          <select
+            class="form-control"
+            id="breed"
+            name="breed"
+            [(ngModel)]="model.breed"
+          >
+            <option>Any</option>
+            <option *ngFor="let breed of Breeds" [value]="breed">
+              {{ breed }}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="petAge">Age</label>
+          <select
+            class="form-control"
+            id="petAge"
+            name="age"
+            [(ngModel)]="model.age"
+          >
+            <option>Any</option>
+            <option>Puppy</option>
+            <option>Young</option>
+            <option>Adult</option>
+            <option>Senior</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="petSize">Size</label>
+          <select
+            class="form-control"
+            id="petSize"
+            name="size"
+            [(ngModel)]="model.size"
+          >
+            <option>Any</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select
+            class="form-control"
+            id="gender"
+            name="gender"
+            [(ngModel)]="model.gender"
+          >
+            <option>Any</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- Search Results Area -->
+    <div class="col-lg-9 displayResults">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="card petBox">
+            <img
+              src="assets/images/puppy1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name</h5>
             </div>
-            <div class="form-group">
-              <label for="petAge">Age</label>
-              <select class="form-control" id="petAge" name="age" [(ngModel)]="model.age">
-                <option>Any</option>
-                <option>Puppy</option>
-                <option>Young</option>
-                <option>Adult</option>
-                <option>Senior</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="petSize">Size</label>
-              <select class="form-control" id="petSize" name="size" [(ngModel)]="model.size">
-                <option>Any</option>
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
-                <option>Extra Large</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="gender">Gender</label>
-              <select class="form-control" id="gender" name="gender" [(ngModel)]="model.gender">
-                <option>Any</option>
-                <option>Male</option>
-                <option>Female</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary btn-block">Submit</button>
-            </div>
-        </form>
-      </div>
-      <!-- Search Results Area -->
-      <div class="col-9 displayResults">
-              <div class="card-columns mb-5">
-                  <div class="card">
-                      <img src="image/puppy1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Pet Name</h5>
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Breed</li>
-                        <li class="list-group-item">Age</li>
-                        <li class="list-group-item">Location</li>
-                      </ul>
-                    </div>
-                  <div class="card">
-                    <img src="image/puppy1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Pet Name</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Breed</li>
-                      <li class="list-group-item">Age</li>
-                      <li class="list-group-item">Location</li>
-                    </ul>
-                  </div>
-                  <div class="card">
-                    <img src="image/puppy1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Pet Name</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Breed</li>
-                      <li class="list-group-item">Age</li>
-                      <li class="list-group-item">Location</li>
-                    </ul>
-                  </div>
-                  <div class="card">
-                    <img src="image/puppy2.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Pet Name</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Breed</li>
-                      <li class="list-group-item">Age</li>
-                      <li class="list-group-item">Location</li>
-                    </ul>
-                  </div>
-                </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Breed</li>
+              <li class="list-group-item">Age</li>
+              <li class="list-group-item">Location</li>
+            </ul>
           </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="card petBox">
+            <img
+              src="assets/images/puppy1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Breed</li>
+              <li class="list-group-item">Age</li>
+              <li class="list-group-item">Location</li>
+            </ul>
+          </div>
+         </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="card petBox">
+            <img
+              src="assets/images/puppy1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Breed</li>
+              <li class="list-group-item">Age</li>
+              <li class="list-group-item">Location</li>
+            </ul>
+          </div>
+         </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="card petBox">
+            <img
+              src="assets/images/puppy1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Breed</li>
+              <li class="list-group-item">Age</li>
+              <li class="list-group-item">Location</li>
+            </ul>
+          </div>
+         </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="card petBox">
+            <img
+              src="assets/images/puppy1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Breed</li>
+              <li class="list-group-item">Age</li>
+              <li class="list-group-item">Location</li>
+            </ul>
+          </div>
+         </div>
       </div>
+    </div>
   </div>
+</div>
