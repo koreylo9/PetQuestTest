@@ -29,6 +29,10 @@ export class PetSearchComponent implements OnInit {
   href  = '';
 
   ngOnInit(): void {
+    this.model.breed = 'any';
+    this.model.age = 'any';
+    this.model.gender = 'any';
+    this.model.size = 'any';
     this.href = this.router.url;
     console.log(this.href);
   }

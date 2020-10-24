@@ -12,7 +12,7 @@
             name="breed"
             [(ngModel)]="model.breed"
           >
-            <option>Any</option>
+            <option value="any">Any</option>
             <option *ngFor="let breed of Breeds" [value]="breed">
               {{ breed }}
             </option>
@@ -26,7 +26,7 @@
             name="age"
             [(ngModel)]="model.age"
           >
-            <option>Any</option>
+            <option value="any">Any</option>
             <option *ngIf="href === '/pet-search'">Puppy</option>
             <option *ngIf="href === '/cat-search'">Kitten</option>
             <option>Young</option>
@@ -42,7 +42,7 @@
             name="size"
             [(ngModel)]="model.size"
           >
-            <option>Any</option>
+            <option value="any">Any</option>
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>
@@ -57,7 +57,7 @@
             name="gender"
             [(ngModel)]="model.gender"
           >
-            <option>Any</option>
+            <option value="any">Any</option>
             <option>Male</option>
             <option>Female</option>
           </select>
