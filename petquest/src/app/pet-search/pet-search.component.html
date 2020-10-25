@@ -70,7 +70,7 @@
     <!-- Search Results Area -->
     <div class="col-lg-9 displayResults">
       <div class="row">
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6" *ngFor="let dog of Dogs">
           <div class="card petBox">
             <img
               src="assets/images/puppy1.jpg"
@@ -78,84 +78,16 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Pet Name</h5>
+              <h5 class="card-title">{{dog.name}}</h5>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Breed</li>
-              <li class="list-group-item">Age</li>
-              <li class="list-group-item">Location</li>
+              <li class="list-group-item">{{dog.breed}}</li>
+              <li class="list-group-item">{{dog.age}}</li>
+              <li class="list-group-item">{{dog.gender}}</li>
+              <li class="list-group-item">{{dog.location}}</li>
             </ul>
           </div>
         </div>
-         <div class="col-md-4 col-sm-6">
-          <div class="card petBox">
-            <img
-              src="assets/images/puppy1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Breed</li>
-              <li class="list-group-item">Age</li>
-              <li class="list-group-item">Location</li>
-            </ul>
-          </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-          <div class="card petBox">
-            <img
-              src="assets/images/puppy1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Breed</li>
-              <li class="list-group-item">Age</li>
-              <li class="list-group-item">Location</li>
-            </ul>
-          </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-          <div class="card petBox">
-            <img
-              src="assets/images/puppy1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Breed</li>
-              <li class="list-group-item">Age</li>
-              <li class="list-group-item">Location</li>
-            </ul>
-          </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-          <div class="card petBox">
-            <img
-              src="assets/images/puppy1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Breed</li>
-              <li class="list-group-item">Age</li>
-              <li class="list-group-item">Location</li>
-            </ul>
-          </div>
-         </div>
-      </div>
     </div>
   </div>
 </div>
