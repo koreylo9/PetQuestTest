@@ -23,7 +23,7 @@ import { PetCareComponent } from './pet-care/pet-care.component';
     PetManagementAddComponent,
     PetManagementViewComponent,
     LogInPageComponent,
-    SignUpPageComponen,
+    SignUpPageComponent,
     UserManagementComponent,
     PetCareComponent
   ],
