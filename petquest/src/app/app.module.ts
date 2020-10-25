@@ -8,6 +8,7 @@ import { PetManagementComponent } from './pet-management/pet-management.componen
 import { PetManagementAddComponent } from './pet-management-add/pet-management-add.component';
 import { PetManagementViewComponent } from './pet-management-view/pet-management-view.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PetCareComponent } from './pet-care/pet-care.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     HomePageComponent,
     PetManagementComponent,
     PetManagementAddComponent,
-    PetManagementViewComponent
+    PetManagementViewComponent,
+    PetCareComponent
   ],
   imports: [
     BrowserModule,
