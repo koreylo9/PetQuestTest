@@ -10,6 +10,9 @@ import { PetManagementViewComponent } from './pet-management-view/pet-management
 import { AppRoutingModule } from './app-routing.module';
 import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { UserManagementComponent } from './user-management/user-management.component';
+import { PetCareComponent } from './pet-care/pet-care.component';
+
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
     PetManagementAddComponent,
     PetManagementViewComponent,
     LogInPageComponent,
-    SignUpPageComponent
-   ],
+    SignUpPageComponen,
+    UserManagementComponent,
+    PetCareComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule
