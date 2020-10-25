@@ -12,15 +12,15 @@ import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     NavigationComponent,
     HomePageComponent,
     PetManagementComponent,
     PetManagementAddComponent,
     PetManagementViewComponent,
-      LogInPageComponent,
-      SignUpPageComponent
+    LogInPageComponent,
+    SignUpPageComponent
    ],
   imports: [
     BrowserModule,
