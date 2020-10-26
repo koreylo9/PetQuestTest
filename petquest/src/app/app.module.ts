@@ -10,6 +10,11 @@ import { PetManagementViewComponent } from './pet-management-view/pet-management
 import { AppRoutingModule } from './app-routing.module';
 import { PetSearchComponent } from './pet-search/pet-search.component';
 import { FormsModule } from '@angular/forms';
+import { LogInPageComponent } from './log-in-page/log-in-page.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { UserManagementComponent } from './user-management/user-management.component';
+import { PetCareComponent } from './pet-care/pet-care.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,11 @@ import { FormsModule } from '@angular/forms';
     PetManagementComponent,
     PetManagementAddComponent,
     PetManagementViewComponent,
-    PetSearchComponent
+    PetSearchComponent,
+    LogInPageComponent,
+    SignUpPageComponent,
+    UserManagementComponent,
+    PetCareComponent
   ],
   imports: [
     BrowserModule,
