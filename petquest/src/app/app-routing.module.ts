@@ -1,3 +1,4 @@
+import { PetSearchComponent } from './pet-search/pet-search.component';
 import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path: 'pet-management', component: PetManagementComponent},
   { path: 'pet-management-add', component: PetManagementAddComponent},
   { path: 'pet-management-view', component: PetManagementViewComponent},
+  { path: 'dog-search', component: PetSearchComponent},
+  { path: 'cat-search', component: PetSearchComponent},
   { path: 'log-in-page', component: LogInPageComponent},
   { path: 'user-management', component: UserManagementComponent},
   { path: 'pet-care', component: PetCareComponent},

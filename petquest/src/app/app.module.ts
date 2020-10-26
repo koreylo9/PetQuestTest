@@ -8,6 +8,8 @@ import { PetManagementComponent } from './pet-management/pet-management.componen
 import { PetManagementAddComponent } from './pet-management-add/pet-management-add.component';
 import { PetManagementViewComponent } from './pet-management-view/pet-management-view.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PetSearchComponent } from './pet-search/pet-search.component';
+import { FormsModule } from '@angular/forms';
 import { LogInPageComponent } from './log-in-page/log-in-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { UserManagementComponent } from './user-management/user-management.component';
@@ -22,6 +24,7 @@ import { PetCareComponent } from './pet-care/pet-care.component';
     PetManagementComponent,
     PetManagementAddComponent,
     PetManagementViewComponent,
+    PetSearchComponent,
     LogInPageComponent,
     SignUpPageComponent,
     UserManagementComponent,
@@ -29,7 +32,8 @@ import { PetCareComponent } from './pet-care/pet-care.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
