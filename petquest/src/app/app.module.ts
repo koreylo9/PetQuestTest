@@ -1,3 +1,4 @@
+import { PetDataService } from './pet-data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -35,7 +36,7 @@ import { PetCareComponent } from './pet-care/pet-care.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [PetDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

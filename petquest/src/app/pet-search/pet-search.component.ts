@@ -1,3 +1,4 @@
+import { PetDataService } from './../pet-data.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -15,15 +16,11 @@ export class PetInfo {
 })
 export class PetSearchComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public petService: PetDataService) { }
 
   model = new PetInfo();
 
-  Dogs = [{name: 'Pet1', breed: 'Poodle', age: '8 months', gender: 'Male', location: 'San Diego, CA'},
-  {name: 'Pet2', breed: 'Husky', age: '6 months', gender: 'Male', location: 'San Francisco, CA'},
-  {name: 'Pet3', breed: 'Cocker Spaniel', age: '5 months', gender: 'Male', location: 'Merced, CA'},
-  {name: 'Pet4', breed: 'Terrier', age: '6 months', gender: 'Female', location: 'Stockton, CA'},
-  {name: 'Pet5', breed: 'Pitbull', age: '11 months', gender: 'Female', location: 'Fresno, CA'}];
+
 
   Breeds: string[] = [
     'Golden Retriever',

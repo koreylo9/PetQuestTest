@@ -70,8 +70,8 @@
     <!-- Search Results Area -->
     <div class="col-lg-9 displayResults">
       <div class="row">
-        <div class="col-md-4 col-sm-6" *ngFor="let dog of Dogs">
-          <div class="card petBox">
+        <div class="col-md-4 col-sm-6" *ngFor="let dog of petService.Dogs">
+          <div routerLink="/pet-management-view" routerLinkActive="active" class="card petBox">
             <img
               src="assets/images/puppy1.jpg"
               class="card-img-top"

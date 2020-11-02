@@ -32,4 +32,6 @@
   margin-bottom: 10%;
 }
 
-
+.petBox:hover{
+  cursor: pointer;
+}
